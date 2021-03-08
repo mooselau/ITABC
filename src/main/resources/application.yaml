@@ -1,0 +1,12 @@
+# profile now activate for logback-spring.xml
+spring:
+  profiles:
+    active: dev
+
+  devtools:
+    add-properties: false
+
+server:
+  port: 8881
+  servlet:
+    contextPath: /itabc

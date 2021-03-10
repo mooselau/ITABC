@@ -1,6 +1,5 @@
 package net.itabc.common;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +10,7 @@ import java.math.BigDecimal;
  */
 @Setter
 @Getter
-@Builder
 public class IndividualTaxCalcRequest extends CalculationRequest {
-    private BigDecimal monthlySocialBenefitsTotal;
+    private BigDecimal monthlySocialBenefitsTotal = BigDecimal.ZERO;
+    private BigDecimal lastMonthAccumulativeTax = BigDecimal.ZERO; // 上月累计已缴纳税额
 }

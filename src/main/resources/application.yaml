@@ -3,10 +3,23 @@ spring:
   profiles:
     active: dev
 
-  devtools:
-    add-properties: false
+#  devtools:
+#    add-properties: false
 
 server:
   port: 8881
   servlet:
     contextPath: /itabc
+
+itabc:
+  taxing:
+    start-line: 5000
+  social-benefits:
+    rates:
+      pension: 0.08
+      unemployment: 0.005
+      medical: 0.02
+      employment-injury: 0.0
+      maternity: 0.0
+      housing-fund: 0.07
+      additional-housing-fund: 0.02

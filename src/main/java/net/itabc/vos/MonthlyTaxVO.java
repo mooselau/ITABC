@@ -1,15 +1,13 @@
-package net.itabc.models;
+package net.itabc.vos;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Builder
-@Setter
-@Getter
-public class MonthlyTax {
+@Data
+public class MonthlyTaxVO {
     private Integer month;
     private BigDecimal tax;
 }
